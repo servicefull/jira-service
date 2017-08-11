@@ -22,7 +22,7 @@ exports.handler = (event, context, callback) => {
     			"key": project_key
     		},
     		"summary": "QA Page : "+payload.pageUrl+" : "+payload.size,
-    		"description": "# QA Page : (screenshot loacted here: https://s3.amazonaws.com/"+payload.s3Bucket+"/"+payload.fileName+")",
+    		"description": "# QA Page : (screenshot loacted here: "+payload.screenshot+")",
     		"issuetype": {
     			"id": issue_type
     		}
